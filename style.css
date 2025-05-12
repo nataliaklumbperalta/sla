@@ -1,11 +1,21 @@
-h1 {
-    color:Escolha uma cor;
-    margin-top: 80%
+/* Estilo para o corpo da página */
+body {
+    position: relative;
+    background-image: url('sol.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-
-/* Estilo para o subtítulo h2 */
-h2 {
-    color:Escolha uma cor;
-    margin-top: 5%
-    
+/* Criando um efeito de opacidade na imagem de fundo */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('sol.jpg') no-repeat center/cover;
+    opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+    z-index: -1;
 }
